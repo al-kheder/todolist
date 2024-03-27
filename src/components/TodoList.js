@@ -24,6 +24,7 @@ export default function TodoList() {
 
   //filteration arrays
   const completedTodos = useMemo(() => {
+    console.log("calling from completed todos");
     return todos.filter((t) => {
       return t.isComplete;
     });
